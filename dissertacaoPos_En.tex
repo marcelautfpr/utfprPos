@@ -1,0 +1,250 @@
+
+\documentclass[oneside,english]{normas_posEn-utf-tex} %oneside = para dissertacoes com numero de paginas menor que 100 (apenas frente da folha) 
+
+% force A4 paper format
+%\special{papersize=210mm,297mm}
+
+\usepackage[english]{babel,varioref} % pacote portugues brasileiro
+\usepackage{float}
+\usepackage[utf8]{inputenc} % pacote para acentuacao direta
+\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
+\usepackage{graphicx} % pacote grafico
+%\usepackage{times} % fonte times
+\usepackage[final]{pdfpages} % adicao da ata
+\usepackage[hidelinks]{hyperref} % gera hiperlinks para o sumario, links, referencias -- deve vir antes do 'abntcite' 
+\usepackage{scalefnt}
+\usepackage{textcomp}
+\usepackage{tabularx}
+\usepackage{pgfgantt}
+\usepackage{rotating}
+%\usepackage{titlesec}
+\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=0]{abntcite} %configuracao correta das referencias bibliograficas.
+\usepackage{subfigure}
+\usepackage{xtab}
+\usepackage{nomencl}
+\usepackage[portuguese,algoruled,longend,linesnumbered]{algorithm2e}
+\usepackage{multirow}
+\usepackage{longtable}
+ %Para linhas numeradas e réguas de identação
+%\usepackage{algorithm2e}
+\usepackage{listings}
+% Definindo novas cores
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+% Configurando layout para mostrar codigos Java
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{red},
+  commentstyle=\color{verde},
+  morecomment=[s][\color{blue}]{/**}{*/},
+  extendedchars=true,
+  showspaces=false,
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{cyan!10},
+  breakautoindent=true,
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4
+}
+\renewcommand{\lstlistingname}{Código}
+\renewcommand\lstlistlistingname{Lista de Códigos}
+\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+%
+%\usepackage{geometry}
+%\geometry{bottom=1cm}
+
+% ---------- Preambulo ----------
+\instituicao{Federal Technological University of Paran\'{a}} % nome da instituicao
+%\departamento{Departamento Acad\^{e}mico de Computa\c{c}\~ao} % nome do programa
+\programa{Postgraduate Program in Computational Technologies for Agribusiness} % área ou curso
+
+\documento{Dissertation}
+\nivel{Postgraduate}
+\titulacao{Master} 
+
+\titulo{{IDENTIFICATION OF FISH SPECIES: A computational approach using techniques of digital image processing and artificial intelligence}} % titulo do trabalho em portugues
+\title{\MakeUppercase{IDENTIFICATION OF FISH SPECIES: A computational approach using techniques of digital image processing and artificial intelligence}} % titulo do trabalho em ingles
+
+\autor{Marcela Marques Barbosa} % autor do trabalho
+\cita{BARBOSA, Marcela Marques} % sobrenome (maiusculas), nome do autor do trabalho
+
+\palavraschave{petri, micro-organismos, alimentos, contagem, imagens} % palavras-chave do trabalho
+\keywords{petri, microorganisms, food, counting, image} % palavras-chave do trabalho em ingles
+
+%\comentario{\UTFPRdocumentodata\ apresentado ao \UTFPRdepartamentodata\ da \ABNTinstituicaodata\ como requisito parcial para obten\c{c}\~ao do título de ``\UTFPRtitulacaodata\ em Ciência da Computação''.}
+
+\comentario{\UTFPRdocumentodata $ \  $ presented as a partial requirement to obtain the degree of \UTFPRtitulacaodata\ of \UTFPRprogramadata, \ABNTinstituicaodata. Area of Concentration: Computational Technologies Applied to Agribusiness}
+
+\orientador[Advisor]{Dr\textordfeminine~Saraspathy N T G De Mendonca} % nome do orientador do trabalho
+\coorientador[Co-Advisor]{Prof. Dr. Pedro Luiz de Paula Filho}
+\coordenador{Prof. Dr. Cláudio Leones Bazzi}
+
+
+\primeiroassina{Prof. Invited 1 \\ Institution}
+\segundoassina{Prof. Invited 2 \\ Institution}
+\terceiroassina{\ABNTcoorientadordata \\ UTFPR - Câmpus Medianeira \\ \ABNTcoorientadorname}
+\quartoassina{\ABNTorientadordata \\ UTFPR - Câmpus Medianeira \\ \ABNTorientadorname}
+%\quartoassina{Prof. Me. Jorge Aikes Junior\\ UTFPR - Câmpus Medianeira}
+
+
+\textoaprovacao{This \UTFPRdocumentodata ~ was presented at 14:00 on November 7, 2016 as a requirement partial in order to obtain a Master's Degree in the \UTFPRtitulacaodata~no \UTFPRprogramadata, da \ABNTinstituicaodata, C\^{a}mpus Medianeira. The candidate was accused by the examining bank composed of the professors below. After deliberation, the examining board considered the work approved.}
+
+\local{Medianeira} % cidade
+\data{\the\year} % ano automatico
+
+% desativa hifenizacao mantendo o texto justificado.
+% thanks to Emilio C. G. Wille
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\sloppy
+
+\definecolor{laranjautfpr}{cmyk}{0.0, 0.2, 1.0, 0.0}
+\usepackage{enumitem}
+\setlist{leftmargin=2cm}
+\setlist{nosep}
+
+
+%---------- Inicio do Documento ----------
+\begin{document}
+\renewcommand{\arraystretch}{1.3}
+\selectlanguage{english}
+
+\capa % geracao automatica da capa
+\folhaderosto % geracao automatica da folha de rosto
+
+\termodeaprovacao
+
+
+%------------------------DEDICATÓRIA------------------------------
+
+\begin{dedicatoria}
+	Dedication of work (optional).
+\end{dedicatoria}
+
+%-----------------------AGRADECIMENTOS----------------------------
+\begin{agradecimentos}
+	\input{Acknowledgment}
+\end{agradecimentos}
+%-----------------------EPÍGRAFE-----------------------------------
+\begin{epigrafe}
+	Epigraph of work (optional).
+\end{epigrafe}
+
+%abstract
+\begin{abstract}
+	\input{resumoEn}
+\end{abstract}
+
+%resumo
+\begin{resumo}
+	\input{resumoPt}
+\end{resumo}
+
+%% listas (opcionais, mas recomenda-se a partir de 5 elementos)
+\input{confListas}
+%\listadefiguras % geracao automatica da lista de figuras
+%\listadetabelas % geracao automatica da lista de tabelas
+%%%\listadequadros % adivinhe :)
+
+%\IfFileExists{/etc/resolv.conf}{}{\listadefiguras} %Geração de lista de figuras e automáticas
+%\IfFileExists{/etc/resolv.conf}{}{\listadetabelas} %Geração de lista de tabelas automáticas
+\listadesiglas % geracao automatica da lista de siglas
+%%\listadesimbolos % geracao automatica da lista de simbolos
+% sumario
+\sumario % geracao automatica do sumario
+
+
+%---------- Inicio do Texto ----------
+% recomenda-se a escrita de cada capitulo em um arquivo texto separado (exemplo: intro.tex, fund.tex, exper.tex, concl.tex, etc.) e a posterior inclusao dos mesmos no mestre do documento utilizando o comando \input{}, da seguinte forma:
+
+%\setcounter{page}{48}
+
+\setlength{\parskip}{0cm}
+\input{intro.tex}
+%\input{funda.tex}
+%\input{pdi}
+\input{metod.tex}
+%\input{recur.tex}
+%\input{viabi.tex}
+\input{resultados}
+\input{concl.tex}
+
+
+
+%---------- Referencias ----------
+\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
+\label{bibstart}
+\bibliography{referencias} % geracao automatica das referencias a partir do arquivo bibliografia.bib
+\label{bibend}
+
+
+
+%\appendix{
+%
+%	
+%\chapter{Resultado da Contagem por Placas}\label{apen:ContagemAbs}
+%\section{Contagem Manual}
+%\input{tabelaResultadoContagemManual}
+%
+%\section{Contagem Automática}
+%\input{tabelaResultadoContagem}	
+%	
+%\chapter{Erros por Placas}\label{apen:ErroPlacas}
+%\input{tabelaErrosPorPlacas}
+%
+%}
+
+% --------- Ordenacao Afabetica da Lista de siglas --------
+%\textbf{* Observa\c{c}\~oes:} a ordenacao alfabetica da lista de siglas ainda nao eh realizada de forma automatica, porem
+% eh possivel se de realizar isto manualmente. Duas formas:
+%
+% ** Primeira forma)
+%    A ordenacao eh feita com o auxilio do comando 'sort', disponivel em qualquer
+% sistema Linux e UNIX, e tambem em sistemas Windows se instalado o coreutils (http://gnuwin32.sourceforge.net/packages/coreutils.htm)
+% comandos para compilar e ordenar, supondo que seu arquivo se chame 'dissertacao.tex':
+%
+%      $ latex dissertacao
+%      $ bibtex dissertacao && latex dissertacao
+%      $ latex dissertacao
+%      $ sort dissertacao.lsg > dissertacao.lsg.tmp
+%      $ mv dissertacao.lsg.tmp dissertacao.lsg
+%      $ latex dissertacao
+%      $ dvipdf dissertacao.dvi
+%
+%
+% ** Segunda forma)
+%\textbf{Sugest\~ao:} crie outro arquivo .tex para siglas e utilize o comando \sigla{sigla}{descri\c{c}\~ao}.
+%Para incluir este arquivo no final do arquivo, utilize o comando \input{arquivo.tex}.
+%Assim, Todas as siglas serao geradas na ultima pagina. Entao, devera excluir a ultima pagina da versao final do arquivo
+% PDF do seu documento.
+
+
+%-------- Citacoes ---------
+% - Utilize o comando \citeonline{...} para citacoes com o seguinte formato: Autor et al. (2011).
+% Este tipo de formato eh utilizado no comeco do paragrafo. P.ex.: \citeonline{autor2011}
+
+% - Utilize o comando \cite{...} para citacoeses no meio ou final do paragrafo. P.ex.: \cite{autor2011}
+
+
+
+%-------- Titulos com nomes cientificos (titulo, capitulos e secoes) ----------
+% Regra para escrita de nomes cientificos:
+% Os nomes devem ser escritos em italico, 
+%a primeira letra do primeiro nome deve ser em maiusculo e o restante em minusculo (inclusive a primeira letra do segundo nome).
+% VEJA os exemplos abaixo.
+% 
+% 1) voce nao quer que a secao fique com uppercase (caixa alta) automaticamente:
+%\section[nouppercase]{\MakeUppercase{Estudo dos efeitos da radiacao ultravioleta C e TFD em celulas de} {\textit{Saccharomyces boulardii}}
+%
+% 2) por padrao os cases (maiusculas/minuscula) sao ajustados automaticamente, voce nao precisa usar makeuppercase e afins.
+% \section{Introducao} % a introducao sera posta no texto como INTRODUCAO, automaticamente, como a norma indica.
+
+
+\end{document}

@@ -1,0 +1,72 @@
+% Encoding: UTF-8
+
+@InBook{Agostinho2006,
+  author        = {Angelo Antonio Agostinho and Fernando Mayer Pelicice and Horácio Ferreira Júlio { } Jr.},
+  title         = {Biodiversidade e Introdução de Espécies de Peixeis},
+  booktitle     = {Unidades de Conservação Ações para valorização da Biodiversidade},
+  year          = {2006},
+  bookauthor    = {João Batista Campos and Márcia Guadalupe Pires Tossulino and Carolina Regina Cury Muller},
+  editor        = {Marlise Cássia Bassfeld},
+  subtitle      = {Unidades de Conservação},
+  publisher     = {Instituto Ambiental do Paraná},
+  location      = {Curitiba},
+  pages         = {90-177},
+  url           = {http://www.terrabrasilis.org.br/ecotecadigital/pdf/unidades-de-conservacao},
+  urldate       = {2017-04-24},
+  timestamp     = {24/04/2017},
+  urlaccessdate = {26 out 2016},
+}
+
+@Online{Genomika2015,
+  title         = {A computação por trás dos exames de sequenciamento genético},
+  year          = {2015},
+  url           = {https://www.genomika.com.br/blog/a-computa%C3%A7%C3%A3o-por-tr%C3%A1s-dos-exames-de-sequenciamento-gen%C3%A9tico-a-era-do-big-data-na-medicina-gen%C3%B4mica/},
+  subtitle      = {A Era do Big Data na Medicina Genômica},
+  organization  = {Bioinformática Exames},
+  month         = {4},
+  timestamp     = {24/04/2017},
+  urlaccessdate = {26 out 2016},
+}
+
+@Book{Guerra2002,
+  author        = {Marcelo Guerra and Maria José de Souza},
+  title         = {Como observar cromossomos},
+  year          = {2002},
+  editor        = {Prof. Dr. Francisco A. Moura Duarte},
+  subtitle      = {Um Guia de Técnicas em Citogenética Vegetal, Animal e Humana},
+  publisher     = {FUNPEC - Editora},
+  location      = {Ribeirão Preto, SP},
+  isbn          = {85-87528-38-6},
+  pagetotal     = {132},
+  url           = {http://www.ensp.fiocruz.br/portal-ensp/_uploads/documentos-pessoais/documento-pessoal_52172.pdf},
+  timestamp     = {24/04/2017},
+  urlaccessdate = {26 out. 2016},
+}
+
+@Article{actascianimsci10755,
+  author        = {Jayme Povh and Héden Moreira and Ricardo Ribeiro and Alberto Prioli and Lauro Vargas and Danielly Blanck and Eliane Gasparino and Danilo Streit { } Jr},
+  title         = {Estimativa da variabilidade genética em linhagens de tilápia do Nilo (Oreochromis niloticus) com a técnica de RAPD},
+  journal       = {Acta Scientiarum. Animal Sciences},
+  year          = {2005},
+  volume        = {27},
+  number        = {1},
+  pages         = {1-10},
+  issn          = {1807-8672},
+  url           = {http://revistas.bvs-vet.org.br/actascianimsci/article/view/10755},
+  abstract      = {A variabilidade genética é essencial para que se possa obter melhoramento genético e, portanto, é de grande importância a sua estimação. Desta forma, o objetivo do presente experimento foi estimar, pela técnica Random Amplified Polymorphic DNA (RAPD), a divergência e a variabilidade genética nas linhagens de tilápias do Nilo (Oreochromis niloticus) Bouaké e Chitralada em duas gerações de reprodutores do rio Nilo. Foram utilizados 20 animais de cada linhagem. A matriz de coeficientes de similaridade de Jaccard entre indivíduos foi utilizada para a construção de um dendrograma e para a determinação, com o teste de Mantel, da divergência genética entre linhagens. A variabilidade genética foi estimada pelo índice de Shannon e pela porcentagem de loci polimórficos. As linhagens Bouaké e Chitralada formaram grupos distintos. A primeira apresentou menor divergência e variabilidade genética em relação à segunda. A variabilidade genética foi semelhante entre as duas gerações de reprodutores em ambas as linhagens},
+  keywords      = {divergência genética; melhoramento genético; Oreochromis niloticus; RAPD; polimorfismo; variabilidade genética},
+  timestamp     = {24/04/2017},
+  urlaccessdate = {25 out. 2016},
+}
+
+@Article{,
+  author   = {Daniel Rodrigues Blanco and Roberto Laridondo Lui and Luiz Antonio Carlos Bertollo and Vladimir Pavan Margarido and Orlando Moreira Filho},
+  title    = {Karyotypic diversity between allopatric populations of the group Hoplias malabaricus (Characiformes: Erythrinidae)},
+  journal  = {Neotropical Ichthyology},
+  year     = {2010},
+  subtitle = {evolutionary and biogeographic considerations},
+  number   = {8},
+  pages    = {361-368},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
